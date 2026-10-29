@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Service Builder — Elan Weddings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="custom-service-builder.css">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <div class="nav-wrap">
+    <div class="nav">
+      <img src="assets/a8205.svg" width="30" height="30" alt="Elan Weddings logo">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <a class="active" href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+      <a class="nav-cta" href="#">
+        Plan Your Wedding
+        <img src="assets/c464f.svg" width="12" height="14" alt="">
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= HERO ================= -->
+  <div class="hero">
+    <img class="hero-bg" src="assets/builder-hero.png" alt="">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Custom package builder</p>
+      <h1>Build Your Dream Wedding</h1>
+      <p class="hero-sub">Choose from our curated options to create a package that's perfectly tailored to your celebration.</p>
+      </div>
+  </div>
+
+  <!-- ================= BUILDER ================= -->
+  <div class="builder-layout">
+    <main class="builder-main">
+
+      <!-- STEP 01 — PLANNING -->
+      <section class="step">
+        <div class="step-number">01</div>
+        <div class="step-body">
+          <p class="step-kicker">Wedding planning</p>
+          <h2>Choose Your Planning Level</h2>
+          <p class="step-sub">Select how much support you'd like from our team.</p>
+
+          <div class="cards cards-4">
+            <button class="option-card selected" data-group="planning" data-value="Full Wedding Planning" type="button">
+              <span class="card-media"><img src="assets/builder-planning-full.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Full Wedding Planning</span>
+              <span class="card-desc">Complete planning from concept to celebration.</span>
+            </button>
+            <button class="option-card" data-group="planning" data-value="Partial Planning" type="button">
+              <span class="card-media"><img src="assets/builder-planning-partial.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Partial Planning</span>
+              <span class="card-desc">Support with selected planning requirements.</span>
+            </button>
+            <button class="option-card" data-group="planning" data-value="Day-of Coordination" type="button">
+              <span class="card-media"><img src="assets/builder-planning-dayof.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Day-of Coordination</span>
+              <span class="card-desc">Professional coordination for your wedding day.</span>
+            </button>
+            <button class="option-card" data-group="planning" data-value="Destination Wedding" type="button">
+              <span class="card-media"><img src="assets/builder-planning-destination.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Destination Wedding</span>
+              <span class="card-desc">End-to-end planning for celebrations away from home.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 02 — STYLE -->
+      <section class="step">
+        <div class="step-number">02</div>
+        <div class="step-body">
+          <p class="step-kicker">Wedding style</p>
+          <h2>Choose Your Wedding Aesthetic</h2>
+          <p class="step-sub">Select the style that best reflects your vision.</p>
+
+          <div class="cards cards-5">
+            <button class="option-card selected" data-group="style" data-value="Traditional Indian" type="button">
+              <span class="card-media"><img src="assets/builder-style-traditional.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Traditional Indian</span>
+              <span class="card-desc">Rich traditions and timeless rituals.</span>
+            </button>
+            <button class="option-card" data-group="style" data-value="Modern Minimal" type="button">
+              <span class="card-media"><img src="assets/builder-style-modern.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Modern Minimal</span>
+              <span class="card-desc">Clean, elegant and contemporary design.</span>
+            </button>
+            <button class="option-card" data-group="style" data-value="Royal Heritage" type="button">
+              <span class="card-media"><img src="assets/builder-style-royal.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Royal Heritage</span>
+              <span class="card-desc">A regal experience with royal charm.</span>
+            </button>
+            <button class="option-card" data-group="style" data-value="Garden Romance" type="button">
+              <span class="card-media"><img src="assets/builder-style-garden.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Garden Romance</span>
+              <span class="card-desc">Fresh, natural and dreamy celebrations.</span>
+            </button>
+            <button class="option-card" data-group="style" data-value="Contemporary Luxury" type="button">
+              <span class="card-media"><img src="assets/builder-style-luxury.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Contemporary Luxury</span>
+              <span class="card-desc">A modern take on luxury and elegance.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 03 — SERVICES -->
+      <section class="step">
+        <div class="step-number">03</div>
+        <div class="step-body">
+          <p class="step-kicker">Services &amp; experiences</p>
+          <h2>Choose Your Services</h2>
+          <p class="step-sub">Select the services you'd like to include. You can choose multiple options.</p>
+
+          <div class="cards cards-3">
+            <button class="option-card selected" data-group="services" data-value="Décor & Styling" type="button">
+              <span class="card-media"><img src="assets/builder-service-decor.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Décor &amp; Styling</span>
+              <span class="card-desc">Bespoke décor that brings your vision to life.</span>
+            </button>
+            <button class="option-card selected" data-group="services" data-value="Entertainment & Sangeet" type="button">
+              <span class="card-media"><img src="assets/builder-service-entertainment.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Entertainment &amp; Sangeet</span>
+              <span class="card-desc">Music, performances and unforgettable celebrations.</span>
+            </button>
+            <button class="option-card" data-group="services" data-value="Haldi Coordination" type="button">
+              <span class="card-media"><img src="assets/builder-service-haldi.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Haldi Coordination</span>
+              <span class="card-desc">Fun and vibrant haldi ceremonies.</span>
+            </button>
+            <button class="option-card selected" data-group="services" data-value="Catering & Guest Experience" type="button">
+              <span class="card-media"><img src="assets/builder-service-catering.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Catering &amp; Guest Experience</span>
+              <span class="card-desc">Delicious cuisine and seamless guest management.</span>
+            </button>
+            <button class="option-card selected" data-group="services" data-value="Photography & Videography" type="button">
+              <span class="card-media"><img src="assets/builder-service-photography.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Photography &amp; Videography</span>
+              <span class="card-desc">Capture every precious moment.</span>
+            </button>
+            <button class="option-card" data-group="services" data-value="Venue Management" type="button">
+              <span class="card-media"><img src="assets/builder-service-venue.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Venue Management</span>
+              <span class="card-desc">Venue selection and complete coordination.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 04 — EXPERIENCE -->
+      <section class="step">
+        <div class="step-number">04</div>
+        <div class="step-body">
+          <p class="step-kicker">Wedding experience</p>
+          <h2>Choose the Experience You Envision</h2>
+          <p class="step-sub">Select the size and scale of your celebration.</p>
+
+          <div class="cards cards-4">
+            <button class="option-card selected" data-group="experience" data-value="Intimate Celebration" type="button">
+              <span class="card-media"><img src="assets/builder-experience-intimate.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Intimate Celebration</span>
+              <span class="card-desc">Up to 100 guests. Elegant and personal.</span>
+            </button>
+            <button class="option-card" data-group="experience" data-value="Classic Celebration" type="button">
+              <span class="card-media"><img src="assets/builder-experience-classic.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Classic Celebration</span>
+              <span class="card-desc">100 – 300 guests. Traditional wedding experience.</span>
+            </button>
+            <button class="option-card" data-group="experience" data-value="Grand Celebration" type="button">
+              <span class="card-media"><img src="assets/builder-experience-grand.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Grand Celebration</span>
+              <span class="card-desc">300 – 600 guests. A complete luxury celebration.</span>
+            </button>
+            <button class="option-card" data-group="experience" data-value="Royal Destination" type="button">
+              <span class="card-media"><img src="assets/builder-experience-royal.png" alt=""><span class="badge"></span></span>
+              <span class="card-title">Royal Destination</span>
+              <span class="card-desc">600+ guests. A multi-event destination experience.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-flower">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="3.2" fill="#fff"/><ellipse cx="10" cy="4" rx="2.6" ry="4" fill="#fff" opacity=".85"/><ellipse cx="10" cy="16" rx="2.6" ry="4" fill="#fff" opacity=".85"/><ellipse cx="4" cy="10" rx="4" ry="2.6" fill="#fff" opacity=".85"/><ellipse cx="16" cy="10" rx="4" ry="2.6" fill="#fff" opacity=".85"/></svg>
+        </div>
+        <h3>Your Package</h3>
+        <p class="sidebar-sub">Your selections will appear here</p>
+
+        <ul class="package-list">
+          <li data-summary-for="planning">
+            <span class="li-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="2.5" width="13" height="12" rx="1.5" stroke="#c45b73" stroke-width="1.2"/><path d="M1.5 6h13M4.5 1v2.5M11.5 1v2.5" stroke="#c45b73" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </span>
+            <span class="li-text"><strong>Planning</strong><span class="li-value">Not selected</span></span>
+          </li>
+          <li data-summary-for="style">
+            <span class="li-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2" fill="#c45b73"/><ellipse cx="8" cy="3" rx="1.8" ry="2.8" fill="#c45b73" opacity=".85"/><ellipse cx="8" cy="13" rx="1.8" ry="2.8" fill="#c45b73" opacity=".85"/><ellipse cx="3" cy="8" rx="2.8" ry="1.8" fill="#c45b73" opacity=".85"/><ellipse cx="13" cy="8" rx="2.8" ry="1.8" fill="#c45b73" opacity=".85"/></svg>
+            </span>
+            <span class="li-text"><strong>Wedding Style</strong><span class="li-value">Not selected</span></span>
+          </li>
+          <li data-summary-for="services">
+            <span class="li-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.2" stroke="#c45b73" stroke-width="1.2"/><path d="M8 4.5v3.7l2.6 1.5" stroke="#c45b73" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="li-text"><strong>Services</strong><span class="li-value">Not selected</span></span>
+          </li>
+          <li data-summary-for="experience">
+            <span class="li-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="5.5" cy="5" r="2" stroke="#c45b73" stroke-width="1.1"/><circle cx="10.5" cy="5" r="2" stroke="#c45b73" stroke-width="1.1"/><path d="M1.5 14c0-2.2 1.8-4 4-4s4 1.8 4 4M7.5 14c0-2.2 1.8-4 4-4s3.6 1.6 3.9 3.6" stroke="#c45b73" stroke-width="1.1" stroke-linecap="round"/></svg>
+            </span>
+            <span class="li-text"><strong>Experience</strong><span class="li-value">Not selected</span></span>
+          </li>
+        </ul>
+
+        <button class="btn btn-request" type="button" id="requestBtn">
+          Request Your Package
+          <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5h10M6.5 1l4 4-4 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="sidebar-note">Custom package tailored to your selections.</p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ================= CTA BANNER ================= -->
+  <div class="cta-banner">
+    <svg class="cta-branch" width="360" height="260" viewBox="0 0 360 260" fill="none">
+      <path d="M20 240 C 60 180, 40 120, 90 60 C 120 25, 160 10, 210 6" stroke="#e3aab8" stroke-width="1.5" opacity=".55"/>
+      <ellipse cx="95" cy="58" rx="10" ry="5" fill="#e3aab8" opacity=".4" transform="rotate(-30 95 58)"/>
+      <ellipse cx="130" cy="35" rx="10" ry="5" fill="#e3aab8" opacity=".4" transform="rotate(-20 130 35)"/>
+      <ellipse cx="60" cy="150" rx="10" ry="5" fill="#e3aab8" opacity=".4" transform="rotate(40 60 150)"/>
+      <ellipse cx="45" cy="200" rx="10" ry="5" fill="#e3aab8" opacity=".4" transform="rotate(60 45 200)"/>
+    </svg>
+    <div class="cta-text">
+      <span class="cta-quote">&rdquo;</span>
+      <h2>Your Dream Celebration Awaits</h2>
+      <p>Let us bring your vision to life with a custom package tailored to your selections.</p>
+      <a class="btn" href="#">
+        Request Your Package
+        <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5h10M6.5 1l4 4-4 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <img class="cta-photo" src="assets/builder-cta.png" alt="">
+  </div>
+
+  <script>
+    function refreshSummary(group) {
+      var li = document.querySelector('li[data-summary-for="' + group + '"] .li-value');
+      if (!li) return;
+      if (group === 'services') {
+        var chosen = Array.from(document.querySelectorAll('.option-card[data-group="services"].selected')).map(function (c) { return c.dataset.value; });
+        li.textContent = chosen.length ? (chosen.length + ' service' + (chosen.length > 1 ? 's' : '') + ' selected') : 'Not selected';
+      } else {
+        var card = document.querySelector('.option-card[data-group="' + group + '"].selected');
+        li.textContent = card ? card.dataset.value : 'Not selected';
+      }
+    }
+
+    document.querySelectorAll('.option-card').forEach(function (card) {
+      card.addEventListener('click', function () {
+        var group = card.dataset.group;
+        if (group === 'services') {
+          card.classList.toggle('selected');
+        } else {
+          document.querySelectorAll('.option-card[data-group="' + group + '"]').forEach(function (c) { c.classList.remove('selected'); });
+          card.classList.add('selected');
+        }
+        refreshSummary(group);
+      });
+    });
+
+    ['planning', 'style', 'services', 'experience'].forEach(refreshSummary);
+
+    document.getElementById('requestBtn').addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
