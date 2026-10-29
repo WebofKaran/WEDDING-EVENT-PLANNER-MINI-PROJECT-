@@ -1,10 +1,10 @@
 
 function validateForm() {
   
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  var message = document.getElementById("message").value;
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const message = document.getElementById("message").value;
  
   
   if (name == "" || email == "" || phone == "" || message == "") {
@@ -16,4 +16,4 @@ function validateForm() {
     alert("Please enter a valid phone number");
     return false;
   }
-}
+}   
