@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="contact.css">
+  <script src="contact.js"></script>
   
 </head>
 <body>
@@ -80,7 +81,7 @@
         <label for="message">Your Message</label>
         <textarea id="message" name="message" rows="5" placeholder="Tell us about your wedding..."></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" onclick="return validateForm()">Send Message</button>
 
 
       </form>
@@ -92,7 +93,7 @@
   <footer>
     <p>&copy; 2026 Ever After. All rights reserved.</p>
   </footer>
-
+  
 
 
 </body>
