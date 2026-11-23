@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Elan Weddings — thoughtful Indian wedding planning, bespoke celebrations and a personalized wedding package builder.">
+    <meta name="theme-color" content="#c45b73">
+
+    <title>My Profile | Elan Weddings</title>
+
+    <link rel="icon" href="assets/b7664.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="profile.css?v=flat-css-1">
+
+    <script src="shared.js" defer></script>
+    <script src="profile.js" defer></script>
+</head>
+
+<body data-page="profile.html">
+
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="nav-wrap">
+        <nav class="nav" aria-label="Main navigation">
+
+            <a href="home.html" aria-label="Elan Weddings home">
+                <img src="assets/b7664.svg" width="30" height="30" alt="Elan Weddings logo">
+            </a>
+
+            <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+                ☰
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="custom-service-builder.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <a class="nav-cta" href="custom-service-builder.html">
+                Plan Your Wedding
+                <img src="assets/c464f.svg" width="12" height="14" alt="">
+            </a>
+
+        </nav>
+    </header>
+
+    <div class="account-access" aria-label="Account">
+        <a href="login.html" data-account-link>Log in / Sign up</a>
+    </div>
+
+    <main id="main">
+
+        <section class="page-heading">
+            <p class="eyebrow">YOUR WEDDING JOURNEY</p>
+            <h1>My Profile</h1>
+            <p>Your details and wedding plans, together in one place.</p>
+        </section>
+
+        <section class="container profile-panel">
+
+            <div id="profile-empty">
+                <h2>Let’s start with your name.</h2>
+                <p>Create a demo profile or log in to see your details here.</p>
+                <a class="btn" href="login.html">Log in / Sign up</a>
+            </div>
+
+            <div id="profile-details" hidden>
+
+                <span class="profile-avatar" id="profile-initial" aria-hidden="true"></span>
+
+                <h2 id="profile-name"></h2>
+
+                <p class="eyebrow">LOCAL DEMO PROFILE</p>
+
+                <dl>
+                    <dt>Name</dt>
+                    <dd id="profile-full-name"></dd>
+
+                    <dt>Email address</dt>
+                    <dd id="profile-email-value"></dd>
+                </dl>
+
+                <p class="small">
+                    Saved in this browser only. No real account or password is stored.
+                </p>
+
+                <div class="profile-actions">
+                    <a class="btn" href="custom-service-builder.html">My Wedding Package</a>
+                    <a class="btn btn-outline" href="contact.html">Plan with Us</a>
+                    <button class="text-button" id="profile-logout" type="button">
+                        Log out & clear profile
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+                <a class="wordmark" href="home.html">
+                    élan<span>WEDDINGS</span>
+                </a>
+
+                <p>
+                    With love, for your forever.<br>
+                    Thoughtfully planned. Beautifully remembered.
+                </p>
+            </div>
+
+            <div>
+                <h3>Your celebration</h3>
+                <a href="about.html">Our story</a>
+                <a href="custom-service-builder.html">Build your package</a>
+                <a href="portfolio.html">Wedding inspiration</a>
+            </div>
+
+            <div>
+                <h3>Let’s begin</h3>
+                <a href="contact.html">Get in touch</a>
+                <a href="login.html">Log in / Sign up</a>
+                <a href="profile.html">My Profile</a>
+                <a href="privacy.html">Privacy & terms</a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2026 Elan Weddings</span>
+            <span>Made for meaningful beginnings.</span>
+        </div>
+
+    </footer>
+
+    <dialog id="login-dialog" aria-labelledby="login-title">
+
+        <button class="close" data-close aria-label="Close login">×</button>
+
+        <p class="eyebrow">YOUR WEDDING JOURNEY</p>
+
+        <h2 id="login-title">Your forever starts here.</h2>
+
+        <p class="auth-demo-note">
+            Demo only — use sample details. No real account is created.
+            Passwords are not verified, saved or sent.
+        </p>
+
+        <div id="auth-fields">
+
+            <div class="auth-modes" aria-label="Choose signup or login">
+                <button class="auth-mode active" type="button" data-mode="signup" aria-pressed="true">
+                    Create account
+                </button>
+
+                <button class="auth-mode" type="button" data-mode="login" aria-pressed="false">
+                    Log in
+                </button>
+            </div>
+
+            <form id="login-form">
+
+                <label id="auth-name-field" for="auth-name">
+                    Your name
+                    <input
+                        id="auth-name"
+                        name="name"
+                        required
+                        maxlength="60"
+                        autocomplete="off"
+                        placeholder="Your name"
+                    >
+                </label>
+
+                <label for="auth-email">
+                    Email address
+                    <input
+                        id="auth-email"
+                        name="email"
+                        type="email"
+                        required
+                        maxlength="254"
+                        autocomplete="off"
+                        placeholder="you@example.com"
+                    >
+                </label>
+
+                <label for="auth-password">Password</label>
+
+                <div class="password-field">
+                    <input
+                        id="auth-password"
+                        type="password"
+                        required
+                        minlength="8"
+                        maxlength="128"
+                        autocomplete="new-password"
+                        placeholder="At least 8 characters"
+                        aria-describedby="password-help"
+                    >
+
+                    <button
+                        type="button"
+                        id="toggle-password"
+                        aria-label="Show or hide password"
+                        aria-controls="auth-password"
+                        aria-pressed="false"
+                    >
+                        Show
+                    </button>
+                </div>
+
+                <p id="password-help" class="small">
+                    Use any sample password of 8 or more characters.
+                </p>
+
+                <button class="btn" type="submit" id="auth-submit">
+                    Create Demo Profile
+                </button>
+
+            </form>
+
+        </div>
+
+        <div id="auth-success" hidden>
+
+            <span class="auth-check" aria-hidden="true">✓</span>
+
+            <p id="profile-email"></p>
+
+            <p>Your demo profile is ready. Let’s plan something beautiful.</p>
+
+            <a href="profile.html" class="btn">View My Profile</a>
+            <a href="custom-service-builder.html" class="btn btn-outline">Explore My Package</a>
+
+            <button class="text-button" id="logout" type="button">
+                Log out & clear demo profile
+            </button>
+
+        </div>
+
+        <p id="login-status" role="status"></p>
+
+    </dialog>
+
+    <div id="toast" role="status"></div>
+
+</body>
+</html>
