@@ -1,0 +1,28 @@
+.invitation {
+  text-align: center;
+  padding: 90px 24px;
+  background: #eddae0;
+}
+.invitation h2 { font-family: Svetze, Georgia, serif; font-size: clamp(38px, 4.3vw, 58px); }
+.invitation p { margin-bottom: 26px; }
+.arch-photo {
+  width: 100%;
+  height: 560px;
+  border-radius: 220px 220px 18px 18px;
+}
+.soft { background: #efe4df; }
+.soft .container>h2, .soft .container>.eyebrow { text-align: center; }
+.flower {
+  display: block;
+  font-size: 38px;
+  color: #c45b73;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+@media(max-width:800px) {
+  .arch-photo { height: 450px; }
+}
+@media(max-width:540px) {
+  .arch-photo { height: 400px; }
+  .invitation { padding: 65px 20px; }
+}
