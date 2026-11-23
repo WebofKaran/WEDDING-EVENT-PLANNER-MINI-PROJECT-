@@ -2,498 +2,255 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Elan Weddings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Elan Weddings — thoughtful Indian wedding planning, bespoke celebrations and a personalized wedding package builder.">
+  <meta name="theme-color" content="#c45b73">
+  <title>Wedding Inspiration | Elan Weddings</title>
 
   
-  <link rel="stylesheet" href="portfolio.css">
+  <link rel="icon" href="assets/b7664.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="portfolio.css?v=flat-css-1">
+
+  
+  <script src="shared.js" defer></script>
+  <script src="portfolio.js" defer></script>
 </head>
-<body>
+<body data-page="portfolio.html">
+  <a class="skip" href="#main">Skip to content</a>
 
  
-  <div class="hero">
-   
-    <img class="hero-bg" src="../assets/b8f9e.png" alt="Elan Weddings Hero Background">
-    <div class="hero-shade"></div>
-    <div class="hero-fade"></div>
-
-    
-    <div class="nav">
-      
-      <a href="../home.html" class="nav-logo" aria-label="Elan Weddings Home">
-        <img src="../assets/b7664.svg" width="30" height="30" alt="Elan Weddings logo">
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="home.html" aria-label="Elan Weddings home">
+        <img src="assets/b7664.svg" width="30" height="30" alt="Elan Weddings logo">
       </a>
-
-      
-      <div class="nav-links">
-        <a href="../home.html">Home</a>
-        <a href="../about.html">About Us</a>
-        <a href="../custom-service-builder.html">Services</a>
-        <a class="active" href="portfolio.html">Portfolio</a>
-        <a href="../contact.html">Contact</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="custom-service-builder.html">Services</a>
+        <a href="portfolio.html" class="active" aria-current="page">Portfolio</a>
+        <a href="contact.html">Contact</a>
       </div>
-
-      
-      <a class="nav-cta" href="../contact.html">
-        Plan Your Wedding
-        <img src="../assets/c464f.svg" width="12" height="14" alt="Arrow">
+      <a class="nav-cta" href="custom-service-builder.html">
+        Plan Your Wedding <img src="assets/c464f.svg" width="12" height="14" alt="">
       </a>
-    </div>
+    </nav>
+  </header>
 
-    
-    <div class="hero-text">
-      <p class="hero-small serif">Our Recent Celebrations</p>
-      <h1 class="hero-big">Moments Turned Into Memories.</h1>
-      <p class="hero-desc">Explore our curated gallery of royal vows, dreamy beach soirées, breathtaking floral installations, and emotional celebrations planned and executed with effortless elegance.</p>
-    </div>
-
-    
-    <div class="hero-buttons">
-      <a class="btn btn-start" href="#gallery">Explore Gallery</a>
-      <a class="btn btn-watch" href="../contact.html">
-        Plan Your Wedding
-        <img src="../assets/cb15e.svg" width="9" height="12" alt="">
-      </a>
-    </div>
+  <div class="account-access" aria-label="Account">
+    <a href="login.html" data-account-link>Log in / Sign up</a>
   </div>
 
   
-  <div class="scroll-badge-wrap">
-    <a href="#gallery" class="scroll-badge" aria-label="Scroll down to celebrations">
-      <img src="../assets/e6e7f.svg" width="14" height="14" alt="Down arrow">
-    </a>
-  </div>
-
-  <main id="gallery">
+  <main id="main">
     
-    <section class="filter-section">
-      <div class="container">
-        <div class="filter-buttons">
-          <button type="button" class="filter-btn active" data-filter="all">All Celebrations</button>
-          <button type="button" class="filter-btn" data-filter="weddings">Weddings</button>
-          <button type="button" class="filter-btn" data-filter="receptions">Receptions</button>
-          <button type="button" class="filter-btn" data-filter="decor">Floral & Decor</button>
-          <button type="button" class="filter-btn" data-filter="prewedding">Pre-Wedding</button>
-        </div>
+    <section class="page-heading reveal">
+      <p class="eyebrow">THE ELAN EDIT</p>
+      <h1>A little inspiration.<br>A lifetime of memories.</h1>
+      <p>Explore wedding moods and design concepts from our inspiration collection.</p>
+    </section>
+
+   
+    <section class="container section">
+      
+      <div class="filters" aria-label="Filter inspiration">
+        <button class="filter active" aria-pressed="true" data-filter="All">All</button>
+        <button class="filter" aria-pressed="false" data-filter="Heritage">Heritage</button>
+        <button class="filter" aria-pressed="false" data-filter="Garden">Garden</button>
+        <button class="filter" aria-pressed="false" data-filter="Celebrations">Celebrations</button>
+      </div>
+
+     
+      <div class="gallery">
+
+       
+        <button class="gallery-card reveal" data-category="Heritage" data-story="0">
+          <img src="assets/wedding-reception-hd.webp" alt="A royal affair wedding inspiration" loading="lazy">
+          <span class="gallery-meta">Heritage · Design concept</span>
+          <h2>A royal affair</h2>
+          <span class="text-link">Explore the details</span>
+        </button>
+        <dialog class="story-dialog" id="story-0" aria-labelledby="story-title-0">
+          <button class="close" data-close aria-label="Close inspiration">×</button>
+          <img src="assets/wedding-reception-hd.webp" alt="A royal affair">
+          <div>
+            <p class="eyebrow">Heritage · INSPIRATION</p>
+            <h2 id="story-title-0">A royal affair</h2>
+            <p>Rich textures, traditional details and a regal palette for a celebration steeped in heritage.</p>
+            <a class="btn" href="custom-service-builder.html">Plan a Similar Celebration</a>
+          </div>
+        </dialog>
+
+        
+        <button class="gallery-card reveal" data-category="Garden" data-story="1">
+          <img src="assets/wedding-garden-hd.webp" alt="In full bloom wedding inspiration" loading="lazy">
+          <span class="gallery-meta">Garden · Design concept</span>
+          <h2>In full bloom</h2>
+          <span class="text-link">Explore the details</span>
+        </button>
+        <dialog class="story-dialog" id="story-1" aria-labelledby="story-title-1">
+          <button class="close" data-close aria-label="Close inspiration">×</button>
+          <img src="assets/wedding-garden-hd.webp" alt="In full bloom">
+          <div>
+            <p class="eyebrow">Garden · INSPIRATION</p>
+            <h2 id="story-title-1">In full bloom</h2>
+            <p>Fresh florals and natural textures make room for romance in the open air.</p>
+            <a class="btn" href="custom-service-builder.html">Plan a Similar Celebration</a>
+          </div>
+        </dialog>
+
+       
+        <button class="gallery-card reveal" data-category="Celebrations" data-story="2">
+          <img src="assets/32705.png" alt="A golden beginning wedding inspiration" loading="lazy">
+          <span class="gallery-meta">Celebrations · Design concept</span>
+          <h2>A golden beginning</h2>
+          <span class="text-link">Explore the details</span>
+        </button>
+        <dialog class="story-dialog" id="story-2" aria-labelledby="story-title-2">
+          <button class="close" data-close aria-label="Close inspiration">×</button>
+          <img src="assets/32705.png" alt="A golden beginning">
+          <div>
+            <p class="eyebrow">Celebrations · INSPIRATION</p>
+            <h2 id="story-title-2">A golden beginning</h2>
+            <p>A joyful haldi concept filled with warm colours, flowers and moments together.</p>
+            <a class="btn" href="custom-service-builder.html">Plan a Similar Celebration</a>
+          </div>
+        </dialog>
+
+        
+        <button class="gallery-card reveal" data-category="Garden" data-story="3">
+          <img src="assets/wedding-decor-hd.webp" alt="Modern romance wedding inspiration" loading="lazy">
+          <span class="gallery-meta">Garden · Design concept</span>
+          <h2>Modern romance</h2>
+          <span class="text-link">Explore the details</span>
+        </button>
+        <dialog class="story-dialog" id="story-3" aria-labelledby="story-title-3">
+          <button class="close" data-close aria-label="Close inspiration">×</button>
+          <img src="assets/wedding-decor-hd.webp" alt="Modern romance">
+          <div>
+            <p class="eyebrow">Garden · INSPIRATION</p>
+            <h2 id="story-title-3">Modern romance</h2>
+            <p>Understated styling and a thoughtful palette for an intimate gathering.</p>
+            <a class="btn" href="custom-service-builder.html">Plan a Similar Celebration</a>
+          </div>
+        </dialog>
+
+        
+        <button class="gallery-card reveal" data-category="Celebrations" data-story="4">
+          <img src="assets/wedding-sangeet-hd.webp" alt="An evening to remember wedding inspiration" loading="lazy">
+          <span class="gallery-meta">Celebrations · Design concept</span>
+          <h2>An evening to remember</h2>
+          <span class="text-link">Explore the details</span>
+        </button>
+        <dialog class="story-dialog" id="story-4" aria-labelledby="story-title-4">
+          <button class="close" data-close aria-label="Close inspiration">×</button>
+          <img src="assets/wedding-sangeet-hd.webp" alt="An evening to remember">
+          <div>
+            <p class="eyebrow">Celebrations · INSPIRATION</p>
+            <h2 id="story-title-4">An evening to remember</h2>
+            <p>A sangeet concept built around music, movement and a beautiful shared celebration.</p>
+            <a class="btn" href="custom-service-builder.html">Plan a Similar Celebration</a>
+          </div>
+        </dialog>
+
+        <button class="gallery-card reveal" data-category="Heritage" data-story="5">
+          <img src="assets/5059a.png" alt="Traditions, reimagined wedding inspiration" loading="lazy">
+          <span class="gallery-meta">Heritage · Design concept</span>
+          <h2>Traditions, reimagined</h2>
+          <span class="text-link">Explore the details</span>
+        </button>
+        <dialog class="story-dialog" id="story-5" aria-labelledby="story-title-5">
+          <button class="close" data-close aria-label="Close inspiration">×</button>
+          <img src="assets/5059a.png" alt="Traditions, reimagined">
+          <div>
+            <p class="eyebrow">Heritage · INSPIRATION</p>
+            <h2 id="story-title-5">Traditions, reimagined</h2>
+            <p>Meaningful rituals and timeless Indian details, thoughtfully brought together.</p>
+            <a class="btn" href="custom-service-builder.html">Plan a Similar Celebration</a>
+          </div>
+        </dialog>
+
       </div>
     </section>
 
    
-    <section class="gallery-section">
+    <section class="invitation reveal">
       <div class="container">
-        <div class="gallery-grid" id="galleryGrid">
-
-          
-          <article class="gallery-card" data-category="weddings" data-id="1">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Aarav & Meera Royal Wedding">
-              <span class="card-badge">Wedding</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="1">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Umaid Bhawan Palace, Jodhpur</span>
-                <span>450 Guests</span>
-              </div>
-              <h3 class="card-title">Aarav & Meera</h3>
-              <p class="card-desc">A regal 3-day royal palace affair with traditional marigold entry, velvet mandap, and orchestral symphony.</p>
-              <button type="button" class="card-action-btn" data-id="1">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="weddings" data-id="2">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=900&q=80" alt="Kabir & Rhea Coastal Wedding">
-              <span class="card-badge">Wedding</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="2">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Beachfront Lawn, South Goa</span>
-                <span>250 Guests</span>
-              </div>
-              <h3 class="card-title">Kabir & Rhea</h3>
-              <p class="card-desc">Sunset vows bathed in golden amber hues, minimalist driftwood decor, and acoustic bohemian melodies.</p>
-              <button type="button" class="card-action-btn" data-id="2">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="receptions" data-id="3">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=80" alt="Rohan & Ananya Grand Reception">
-              <span class="card-badge">Reception</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="3">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Taj Lake Palace, Udaipur</span>
-                <span>350 Guests</span>
-              </div>
-              <h3 class="card-title">Rohan & Ananya</h3>
-              <p class="card-desc">An evening of timeless glamour on the royal terrace, featuring floating candelabras and jazz ensembles.</p>
-              <button type="button" class="card-action-btn" data-id="3">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="decor" data-id="4">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80" alt="The Lotus Sanctum Mandap">
-              <span class="card-badge">Floral & Decor</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="4">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 The Oberoi Udaivilas</span>
-                <span>Signature Decor</span>
-              </div>
-              <h3 class="card-title">The Lotus Sanctum</h3>
-              <p class="card-desc">Cascading tuberose, blush roses, and hand-carved stone arches reflected on serene infinity pools.</p>
-              <button type="button" class="card-action-btn" data-id="4">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="prewedding" data-id="5">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="Dev & Simran Heritage Editorial">
-              <span class="card-badge">Pre-Wedding</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="5">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Stepwells & Havelis, Jaipur</span>
-                <span>Editorial Session</span>
-              </div>
-              <h3 class="card-title">Dev & Simran</h3>
-              <p class="card-desc">An intimate cinematic editorial capturing vintage royal architecture and timeless romantic nostalgia.</p>
-              <button type="button" class="card-action-btn" data-id="5">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="receptions" data-id="6">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80" alt="Ishaan & Tanya Ballroom Reception">
-              <span class="card-badge">Reception</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="6">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 ITC Grand Bharat, Gurgaon</span>
-                <span>500 Guests</span>
-              </div>
-              <h3 class="card-title">Ishaan & Tanya</h3>
-              <p class="card-desc">Black-tie banquet surrounded by cascading crystal chandeliers, bespoke cocktails, and live aerial performers.</p>
-              <button type="button" class="card-action-btn" data-id="6">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="decor" data-id="7">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=900&q=80" alt="The Starlight Canopy Decor">
-              <span class="card-badge">Floral & Decor</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="7">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Rambagh Palace, Jaipur</span>
-                <span>Bespoke Lighting</span>
-              </div>
-              <h3 class="card-title">The Starlight Canopy</h3>
-              <p class="card-desc">Overhead glass canopy illuminated by 1,200 micro-fairy lights, hanging wisteria, and fragrant white jasmine.</p>
-              <button type="button" class="card-action-btn" data-id="7">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="weddings" data-id="8">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=900&q=80" alt="Vivaan & Pooja Traditional Wedding">
-              <span class="card-badge">Wedding</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="8">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Jai Mahal Palace, Jaipur</span>
-                <span>600 Guests</span>
-              </div>
-              <h3 class="card-title">Vivaan & Pooja</h3>
-              <p class="card-desc">Royal baraat entry with traditional dhol players, regal pink sandstone courtyards, and grand fireworks display.</p>
-              <button type="button" class="card-action-btn" data-id="8">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="prewedding" data-id="9">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=80" alt="Siddharth & Tara Desert Pre-Wedding">
-              <span class="card-badge">Pre-Wedding</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="9">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Sam Sand Dunes, Jaisalmer</span>
-                <span>Sunset Story</span>
-              </div>
-              <h3 class="card-title">Siddharth & Tara</h3>
-              <p class="card-desc">Golden hour desert editorial with flowing silk ensembles, warm desert winds, and starlit campfire portraits.</p>
-              <button type="button" class="card-action-btn" data-id="9">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="decor" data-id="10">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=80" alt="The Velvet Mirage Sangeet Decor">
-              <span class="card-badge">Floral & Decor</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="10">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Fairmont Jaipur</span>
-                <span>Sangeet Lounge</span>
-              </div>
-              <h3 class="card-title">The Velvet Mirage</h3>
-              <p class="card-desc">Vibrant marigold draping, moroccan brass lanterns, low velvet seating, and an electrified dance floor setup.</p>
-              <button type="button" class="card-action-btn" data-id="10">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="receptions" data-id="11">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=900&q=80" alt="Arjun & Natasha Garden Reception">
-              <span class="card-badge">Reception</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="11">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Taj West End, Bengaluru</span>
-                <span>300 Guests</span>
-              </div>
-              <h3 class="card-title">Arjun & Natasha</h3>
-              <p class="card-desc">An al-fresco garden dinner under centenary banyan trees with bespoke grazing tables and string quartet.</p>
-              <button type="button" class="card-action-btn" data-id="11">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <article class="gallery-card" data-category="prewedding" data-id="12">
-            <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&w=900&q=80" alt="Neil & Kriti Sunrise Editorial">
-              <span class="card-badge">Pre-Wedding</span>
-              <div class="card-overlay">
-                <button type="button" class="view-moment-btn" data-id="12">
-                  <span>View Moment</span> ↗
-                </button>
-              </div>
-            </div>
-            <div class="card-details">
-              <div class="card-meta">
-                <span>📍 Lake Pichola Ghats, Udaipur</span>
-                <span>Sunrise Session</span>
-              </div>
-              <h3 class="card-title">Neil & Kriti</h3>
-              <p class="card-desc">Sunrise boat portraits across tranquil waters reflecting ancient marble domes and misty Aravali hills.</p>
-              <button type="button" class="card-action-btn" data-id="12">
-                Explore Details <span>→</span>
-              </button>
-            </div>
-          </article>
-
-          
-          <div class="gallery-empty" id="galleryEmpty">
-            <h3>No celebrations found</h3>
-            <p>Try switching to another category tab above to explore more moments.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    
-    <section class="portfolio-cta">
-      <div class="container">
-        <div class="cta-inner">
-          <p class="cta-kicker">PLAN YOUR WEDDING WITH US</p>
-          <h2 class="cta-title">Ready to Create Your Own Unforgettable Celebration?</h2>
-          <p class="cta-desc">
-            Let our passionate team craft a bespoke wedding that reflects your unique story, 
-            traditions, and dreams with effortless perfection.
-          </p>
-          <div class="cta-buttons">
-            <a href="../contact.html" class="btn btn-primary">
-              Start Planning
-              <img src="../assets/c464f.svg" width="12" height="14" alt="Arrow">
-            </a>
-            <a href="../custom-service-builder.html" class="btn btn-outline">
-              Explore Services
-            </a>
-          </div>
-        </div>
+        <p class="eyebrow">WITH LOVE, FOR YOUR FOREVER</p>
+        <h2>Your dream celebration awaits.</h2>
+        <p>Tell us your story. We’ll help you bring it beautifully to life.</p>
+        <a class="btn" href="custom-service-builder.html">Create My Package</a>
       </div>
     </section>
   </main>
 
-  
-  <div class="modal" id="portfolioModal" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="modal-backdrop"></div>
-    <div class="modal-dialog">
-      <button type="button" class="modal-close-btn" aria-label="Close details">&times;</button>
-      
-     
-      <div class="modal-media">
-        <img id="modalImage" src="" alt="Wedding celebration photo">
-        <span class="modal-badge" id="modalCategory">Wedding</span>
-        <button type="button" class="modal-arrow prev" aria-label="Previous moment">‹</button>
-        <button type="button" class="modal-arrow next" aria-label="Next moment">›</button>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="wordmark" href="home.html">élan<span>WEDDINGS</span></a>
+        <p>With love, for your forever.<br>Thoughtfully planned. Beautifully remembered.</p>
       </div>
-
-      
-      <div class="modal-info">
-        <span class="modal-kicker">FEATURED CELEBRATION</span>
-        <h2 class="modal-title" id="modalTitle">Couple Names</h2>
-        
-        <div class="modal-meta-grid">
-          <div class="modal-meta-item">
-            <span id="modalLocation">📍 Location</span>
-          </div>
-          <div class="modal-meta-item">
-            <span id="modalGuests">👥 Guests</span>
-          </div>
-          <div class="modal-meta-item">
-            <span id="modalTimeline">📅 Timeline</span>
-          </div>
-        </div>
-
-        <p class="modal-story" id="modalStory">
-          Detailed celebration narrative and production highlights.
-        </p>
-
-        <div class="modal-highlights" id="modalHighlights">
-         
-        </div>
-
-        <div class="modal-bottom">
-          <a href="../contact.html" class="modal-plan-btn">
-            Plan a Similar Wedding
-            <img src="../assets/c464f.svg" width="12" height="14" alt="">
-          </a>
-          <span class="modal-counter" id="modalCounter">1 / 12</span>
-        </div>
+      <div>
+        <h3>Your celebration</h3>
+        <a href="about.html">Our story</a>
+        <a href="custom-service-builder.html">Build your package</a>
+        <a href="portfolio.html">Wedding inspiration</a>
+      </div>
+      <div>
+        <h3>Let’s begin</h3>
+        <a href="contact.html">Get in touch</a>
+        <a href="login.html">Log in / Sign up</a>
+        <a href="profile.html">My Profile</a>
+        <a href="privacy.html">Privacy & terms</a>
       </div>
     </div>
-  </div>
-
-  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="../assets/b7664.svg" width="34" height="34" alt="Elan Weddings">
-            <span class="footer-brand-name">Elan Weddings</span>
-          </div>
-          <p class="footer-tagline">Crafting timeless love stories, breathtaking celebrations, and unforgettable memories across India and beyond.</p>
-        </div>
-        
-        <div class="footer-nav">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="../about.html">About Us</a></li>
-            <li><a href="../custom-service-builder.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h4>Connect With Us</h4>
-          <p>📍 The Heritage Atelier, DLF Cyber City, Gurugram</p>
-          <p>📞 +91 98765 43210</p>
-          <p>✉️ hello@elanweddings.com</p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p class="copyright">© 2026 Elan Weddings. All rights reserved.</p>
-        <p class="footer-crafted">Thoughtfully planned. Beautifully executed.</p>
-      </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Elan Weddings</span>
+      <span>Made for meaningful beginnings.</span>
     </div>
   </footer>
 
 
-  <script src="portfolio.js"></script>
+  <dialog id="login-dialog" aria-labelledby="login-title">
+    <button class="close" data-close aria-label="Close login">×</button>
+    <p class="eyebrow">YOUR WEDDING JOURNEY</p>
+    <h2 id="login-title">Your forever starts here.</h2>
+    <p class="auth-demo-note">Demo only — use sample details. No real account is created. Passwords are not verified, saved or sent.</p>
+    <div id="auth-fields">
+      <div class="auth-modes" aria-label="Choose signup or login">
+        <button class="auth-mode active" type="button" data-mode="signup" aria-pressed="true">Create account</button>
+        <button class="auth-mode" type="button" data-mode="login" aria-pressed="false">Log in</button>
+      </div>
+      <form id="login-form">
+        <label id="auth-name-field" for="auth-name">Your name
+          <input id="auth-name" name="name" required maxlength="60" autocomplete="off" placeholder="Your name">
+        </label>
+        <label for="auth-email">Email address
+          <input id="auth-email" name="email" type="email" required maxlength="254" autocomplete="off" placeholder="you@example.com">
+        </label>
+        <label for="auth-password">Password</label>
+        <div class="password-field">
+          <input id="auth-password" type="password" required minlength="8" maxlength="128" autocomplete="new-password" placeholder="At least 8 characters" aria-describedby="password-help">
+          <button type="button" id="toggle-password" aria-label="Show or hide password" aria-controls="auth-password" aria-pressed="false">Show</button>
+        </div>
+        <p id="password-help" class="small">Use any sample password of 8 or more characters.</p>
+        <button class="btn" type="submit" id="auth-submit">Create Demo Profile</button>
+      </form>
+    </div>
+    <div id="auth-success" hidden>
+      <span class="auth-check" aria-hidden="true">✓</span>
+      <p id="profile-email"></p>
+      <p>Your demo profile is ready. Let’s plan something beautiful.</p>
+      <a href="profile.html" class="btn">View My Profile</a>
+      <a href="custom-service-builder.html" class="btn btn-outline">Explore My Package</a>
+      <button class="text-button" id="logout" type="button">Log out & clear demo profile</button>
+    </div>
+    <p id="login-status" role="status"></p>
+  </dialog>
+
+  <div id="toast" role="status"></div>
 </body>
 </html>
