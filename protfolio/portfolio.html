@@ -1,622 +1,499 @@
-<!-- Portfolio page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | EverAfter Wedding Event Planner</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Elan Weddings</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="portfolio.css">
+  
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 
+ 
+  <div class="hero">
+   
+    <img class="hero-bg" src="../assets/b8f9e.png" alt="Elan Weddings Hero Background">
+    <div class="hero-shade"></div>
+    <div class="hero-fade"></div>
+
     
-    <header class="navbar">
-        <div class="logo">
-            EverAfter
+    <div class="nav">
+      
+      <a href="../home.html" class="nav-logo" aria-label="Elan Weddings Home">
+        <img src="../assets/b7664.svg" width="30" height="30" alt="Elan Weddings logo">
+      </a>
+
+      
+      <div class="nav-links">
+        <a href="../home.html">Home</a>
+        <a href="../about.html">About Us</a>
+        <a href="../custom-service-builder.html">Services</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+
+      
+      <a class="nav-cta" href="../contact.html">
+        Plan Your Wedding
+        <img src="../assets/c464f.svg" width="12" height="14" alt="Arrow">
+      </a>
+    </div>
+
+    
+    <div class="hero-text">
+      <p class="hero-small serif">Our Recent Celebrations</p>
+      <h1 class="hero-big">Moments Turned Into Memories.</h1>
+      <p class="hero-desc">Explore our curated gallery of royal vows, dreamy beach soirées, breathtaking floral installations, and emotional celebrations planned and executed with effortless elegance.</p>
+    </div>
+
+    
+    <div class="hero-buttons">
+      <a class="btn btn-start" href="#gallery">Explore Gallery</a>
+      <a class="btn btn-watch" href="../contact.html">
+        Plan Your Wedding
+        <img src="../assets/cb15e.svg" width="9" height="12" alt="">
+      </a>
+    </div>
+  </div>
+
+  
+  <div class="scroll-badge-wrap">
+    <a href="#gallery" class="scroll-badge" aria-label="Scroll down to celebrations">
+      <img src="../assets/e6e7f.svg" width="14" height="14" alt="Down arrow">
+    </a>
+  </div>
+
+  <main id="gallery">
+    
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-buttons">
+          <button type="button" class="filter-btn active" data-filter="all">All Celebrations</button>
+          <button type="button" class="filter-btn" data-filter="weddings">Weddings</button>
+          <button type="button" class="filter-btn" data-filter="receptions">Receptions</button>
+          <button type="button" class="filter-btn" data-filter="decor">Floral & Decor</button>
+          <button type="button" class="filter-btn" data-filter="prewedding">Pre-Wedding</button>
         </div>
+      </div>
+    </section>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <a href="contact.html" class="nav-btn">
-            Plan Your Wedding
-        </a>
-    </header>
-
-    <main>
-        
-        <section class="page-banner" id="gallery">
-            <p class="section-label">OUR RECENT CELEBRATIONS</p>
-            <h1>Moments Turned Into <span>Memories</span></h1>
-            <p>
-                Explore our curated gallery of royal vows, dreamy beach soirées, breathtaking floral installations, 
-                and emotional celebrations planned and executed with effortless elegance.
-            </p>
-        </section>
-
-        
-        <section class="portfolio-container">
-
-            
-            <input type="radio" name="gallery-filter" id="filter-all" checked>
-            <input type="radio" name="gallery-filter" id="filter-weddings">
-            <input type="radio" name="gallery-filter" id="filter-receptions">
-            <input type="radio" name="gallery-filter" id="filter-decor">
-            <input type="radio" name="gallery-filter" id="filter-prewedding">
+   
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-grid" id="galleryGrid">
 
           
-            <div class="filter-bar">
-                <label for="filter-all" class="filter-pill">All Celebrations</label>
-                <label for="filter-weddings" class="filter-pill">Weddings</label>
-                <label for="filter-receptions" class="filter-pill">Receptions</label>
-                <label for="filter-decor" class="filter-pill">Floral & Decor</label>
-                <label for="filter-prewedding" class="filter-pill">Pre-Wedding</label>
+          <article class="gallery-card" data-category="weddings" data-id="1">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Aarav & Meera Royal Wedding">
+              <span class="card-badge">Wedding</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="1">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
             </div>
-
-            
-            <div class="gallery-grid">
-
-                
-                <article class="gallery-card cat-weddings">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Aarav & Meera Wedding">
-                        <span class="category-tag">Wedding</span>
-                        <a href="#modal-1" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Aarav & Meera</h3>
-                        <p class="gallery-location">📍 Umaid Bhawan Palace, Jodhpur</p>
-                        <p class="gallery-desc">A regal 3-day royal palace affair with traditional marigold entry, velvet mandap, and orchestral symphony.</p>
-                        <a href="#modal-1" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-weddings">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=900&q=80" alt="Kabir & Rhea Wedding">
-                        <span class="category-tag">Wedding</span>
-                        <a href="#modal-2" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Kabir & Rhea</h3>
-                        <p class="gallery-location">📍 Beachfront Lawn, South Goa</p>
-                        <p class="gallery-desc">Sunset vows bathed in golden amber hues, minimalist driftwood decor, and acoustic bohemian melodies.</p>
-                        <a href="#modal-2" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-receptions">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=80" alt="Rohan & Ananya Reception">
-                        <span class="category-tag">Reception</span>
-                        <a href="#modal-3" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Rohan & Ananya</h3>
-                        <p class="gallery-location">📍 Taj Lake Palace, Udaipur</p>
-                        <p class="gallery-desc">An evening of timeless glamour on the royal terrace, featuring floating candelabras and jazz ensembles.</p>
-                        <a href="#modal-3" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-decor">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80" alt="Lotus Blossom Mandap">
-                        <span class="category-tag">Floral & Decor</span>
-                        <a href="#modal-4" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>The Lotus Sanctum</h3>
-                        <p class="gallery-location">📍 The Oberoi Udaivilas</p>
-                        <p class="gallery-desc">Cascading tuberose, blush roses, and hand-carved stone arches reflected on serene infinity pools.</p>
-                        <a href="#modal-4" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-prewedding">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="Dev & Simran Pre-Wedding">
-                        <span class="category-tag">Pre-Wedding</span>
-                        <a href="#modal-5" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Dev & Simran</h3>
-                        <p class="gallery-location">📍 Stepwells & Heritage Havelis, Jaipur</p>
-                        <p class="gallery-desc">An intimate cinematic editorial capturing vintage royal architecture and timeless romantic nostalgia.</p>
-                        <a href="#modal-5" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-receptions">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80" alt="Ishaan & Tanya Reception">
-                        <span class="category-tag">Reception</span>
-                        <a href="#modal-6" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Ishaan & Tanya</h3>
-                        <p class="gallery-location">📍 ITC Grand Bharat, Gurgaon</p>
-                        <p class="gallery-desc">Black-tie banquet surrounded by cascading crystal chandeliers, bespoke cocktails, and live aerial performers.</p>
-                        <a href="#modal-6" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-decor">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=900&q=80" alt="Crystal Garden Canopy">
-                        <span class="category-tag">Floral & Decor</span>
-                        <a href="#modal-7" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>The Starlight Canopy</h3>
-                        <p class="gallery-location">📍 Rambagh Palace, Jaipur</p>
-                        <p class="gallery-desc">Overhead glass canopy illuminated by 1,200 micro-fairy lights, hanging wisteria, and fragrant white jasmine.</p>
-                        <a href="#modal-7" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-weddings">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=900&q=80" alt="Vivaan & Pooja Wedding">
-                        <span class="category-tag">Wedding</span>
-                        <a href="#modal-8" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Vivaan & Pooja</h3>
-                        <p class="gallery-location">📍 Jai Mahal Palace, Jaipur</p>
-                        <p class="gallery-desc">Royal baraat entry with traditional dhol players, regal pink sandstone courtyards, and grand fireworks display.</p>
-                        <a href="#modal-8" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-prewedding">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=80" alt="Siddharth & Tara Pre-Wedding">
-                        <span class="category-tag">Pre-Wedding</span>
-                        <a href="#modal-9" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Siddharth & Tara</h3>
-                        <p class="gallery-location">📍 Sam Sand Dunes, Jaisalmer</p>
-                        <p class="gallery-desc">Golden hour desert editorial with flowing silk ensembles, warm desert winds, and starlit campfire portraits.</p>
-                        <a href="#modal-9" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-decor">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=80" alt="Boho Sangeet Lounge">
-                        <span class="category-tag">Floral & Decor</span>
-                        <a href="#modal-10" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>The Velvet Mirage</h3>
-                        <p class="gallery-location">📍 Fairmont Jaipur</p>
-                        <p class="gallery-desc">Vibrant marigold draping, moroccan brass lanterns, low velvet seating, and an electrified dance floor setup.</p>
-                        <a href="#modal-10" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-receptions">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=900&q=80" alt="Arjun & Natasha Reception">
-                        <span class="category-tag">Reception</span>
-                        <a href="#modal-11" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Arjun & Natasha</h3>
-                        <p class="gallery-location">📍 Taj West End, Bengaluru</p>
-                        <p class="gallery-desc">An al-fresco garden dinner under centenary banyan trees with bespoke grazing tables and string quartet.</p>
-                        <a href="#modal-11" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
-                
-                <article class="gallery-card cat-prewedding">
-                    <div class="gallery-thumb">
-                        <img src="https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&w=900&q=80" alt="Neil & Kriti Pre-Wedding">
-                        <span class="category-tag">Pre-Wedding</span>
-                        <a href="#modal-12" class="zoom-overlay">
-                            <span class="zoom-btn">View Moment ↗</span>
-                        </a>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Neil & Kriti</h3>
-                        <p class="gallery-location">📍 Lake Pichola Ghats, Udaipur</p>
-                        <p class="gallery-desc">Sunrise boat portraits across tranquil waters reflecting ancient marble domes and misty Aravali hills.</p>
-                        <a href="#modal-12" class="gallery-link">Explore Details →</a>
-                    </div>
-                </article>
-
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Umaid Bhawan Palace, Jodhpur</span>
+                <span>450 Guests</span>
+              </div>
+              <h3 class="card-title">Aarav & Meera</h3>
+              <p class="card-desc">A regal 3-day royal palace affair with traditional marigold entry, velvet mandap, and orchestral symphony.</p>
+              <button type="button" class="card-action-btn" data-id="1">
+                Explore Details <span>→</span>
+              </button>
             </div>
+          </article>
 
-        </section>
-
-        
-
-        
-        <div id="modal-1" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" alt="Aarav & Meera Wedding">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Royal Wedding</span>
-                    <h2>Aarav & Meera</h2>
-                    <p class="location">📍 Umaid Bhawan Palace, Jodhpur • 450 Guests</p>
-                    <p class="story">
-                        EverAfter brought royal heritage to life over a breathtaking 3-day extravaganza. 
-                        From hand-crafted brass torchlit entrances to a sanctum wrapped in 10,000 deep crimson roses, 
-                        every second was orchestrated to royal perfection.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-12" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Plan Similar Event</a>
-                        <a href="#modal-2" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
+          
+          <article class="gallery-card" data-category="weddings" data-id="2">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=900&q=80" alt="Kabir & Rhea Coastal Wedding">
+              <span class="card-badge">Wedding</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="2">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
             </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Beachfront Lawn, South Goa</span>
+                <span>250 Guests</span>
+              </div>
+              <h3 class="card-title">Kabir & Rhea</h3>
+              <p class="card-desc">Sunset vows bathed in golden amber hues, minimalist driftwood decor, and acoustic bohemian melodies.</p>
+              <button type="button" class="card-action-btn" data-id="2">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="receptions" data-id="3">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=80" alt="Rohan & Ananya Grand Reception">
+              <span class="card-badge">Reception</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="3">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Taj Lake Palace, Udaipur</span>
+                <span>350 Guests</span>
+              </div>
+              <h3 class="card-title">Rohan & Ananya</h3>
+              <p class="card-desc">An evening of timeless glamour on the royal terrace, featuring floating candelabras and jazz ensembles.</p>
+              <button type="button" class="card-action-btn" data-id="3">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="decor" data-id="4">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80" alt="The Lotus Sanctum Mandap">
+              <span class="card-badge">Floral & Decor</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="4">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 The Oberoi Udaivilas</span>
+                <span>Signature Decor</span>
+              </div>
+              <h3 class="card-title">The Lotus Sanctum</h3>
+              <p class="card-desc">Cascading tuberose, blush roses, and hand-carved stone arches reflected on serene infinity pools.</p>
+              <button type="button" class="card-action-btn" data-id="4">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="prewedding" data-id="5">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="Dev & Simran Heritage Editorial">
+              <span class="card-badge">Pre-Wedding</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="5">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Stepwells & Havelis, Jaipur</span>
+                <span>Editorial Session</span>
+              </div>
+              <h3 class="card-title">Dev & Simran</h3>
+              <p class="card-desc">An intimate cinematic editorial capturing vintage royal architecture and timeless romantic nostalgia.</p>
+              <button type="button" class="card-action-btn" data-id="5">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="receptions" data-id="6">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80" alt="Ishaan & Tanya Ballroom Reception">
+              <span class="card-badge">Reception</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="6">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 ITC Grand Bharat, Gurgaon</span>
+                <span>500 Guests</span>
+              </div>
+              <h3 class="card-title">Ishaan & Tanya</h3>
+              <p class="card-desc">Black-tie banquet surrounded by cascading crystal chandeliers, bespoke cocktails, and live aerial performers.</p>
+              <button type="button" class="card-action-btn" data-id="6">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="decor" data-id="7">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=900&q=80" alt="The Starlight Canopy Decor">
+              <span class="card-badge">Floral & Decor</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="7">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Rambagh Palace, Jaipur</span>
+                <span>Bespoke Lighting</span>
+              </div>
+              <h3 class="card-title">The Starlight Canopy</h3>
+              <p class="card-desc">Overhead glass canopy illuminated by 1,200 micro-fairy lights, hanging wisteria, and fragrant white jasmine.</p>
+              <button type="button" class="card-action-btn" data-id="7">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="weddings" data-id="8">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=900&q=80" alt="Vivaan & Pooja Traditional Wedding">
+              <span class="card-badge">Wedding</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="8">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Jai Mahal Palace, Jaipur</span>
+                <span>600 Guests</span>
+              </div>
+              <h3 class="card-title">Vivaan & Pooja</h3>
+              <p class="card-desc">Royal baraat entry with traditional dhol players, regal pink sandstone courtyards, and grand fireworks display.</p>
+              <button type="button" class="card-action-btn" data-id="8">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="prewedding" data-id="9">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=80" alt="Siddharth & Tara Desert Pre-Wedding">
+              <span class="card-badge">Pre-Wedding</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="9">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Sam Sand Dunes, Jaisalmer</span>
+                <span>Sunset Story</span>
+              </div>
+              <h3 class="card-title">Siddharth & Tara</h3>
+              <p class="card-desc">Golden hour desert editorial with flowing silk ensembles, warm desert winds, and starlit campfire portraits.</p>
+              <button type="button" class="card-action-btn" data-id="9">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="decor" data-id="10">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=80" alt="The Velvet Mirage Sangeet Decor">
+              <span class="card-badge">Floral & Decor</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="10">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Fairmont Jaipur</span>
+                <span>Sangeet Lounge</span>
+              </div>
+              <h3 class="card-title">The Velvet Mirage</h3>
+              <p class="card-desc">Vibrant marigold draping, moroccan brass lanterns, low velvet seating, and an electrified dance floor setup.</p>
+              <button type="button" class="card-action-btn" data-id="10">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="receptions" data-id="11">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=900&q=80" alt="Arjun & Natasha Garden Reception">
+              <span class="card-badge">Reception</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="11">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Taj West End, Bengaluru</span>
+                <span>300 Guests</span>
+              </div>
+              <h3 class="card-title">Arjun & Natasha</h3>
+              <p class="card-desc">An al-fresco garden dinner under centenary banyan trees with bespoke grazing tables and string quartet.</p>
+              <button type="button" class="card-action-btn" data-id="11">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <article class="gallery-card" data-category="prewedding" data-id="12">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&w=900&q=80" alt="Neil & Kriti Sunrise Editorial">
+              <span class="card-badge">Pre-Wedding</span>
+              <div class="card-overlay">
+                <button type="button" class="view-moment-btn" data-id="12">
+                  <span>View Moment</span> ↗
+                </button>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-meta">
+                <span>📍 Lake Pichola Ghats, Udaipur</span>
+                <span>Sunrise Session</span>
+              </div>
+              <h3 class="card-title">Neil & Kriti</h3>
+              <p class="card-desc">Sunrise boat portraits across tranquil waters reflecting ancient marble domes and misty Aravali hills.</p>
+              <button type="button" class="card-action-btn" data-id="12">
+                Explore Details <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          
+          <div class="gallery-empty" id="galleryEmpty">
+            <h3>No celebrations found</h3>
+            <p>Try switching to another category tab above to explore more moments.</p>
+          </div>
+
         </div>
-
-        
-        <div id="modal-2" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=80" alt="Kabir & Rhea Wedding">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Coastal Wedding</span>
-                    <h2>Kabir & Rhea</h2>
-                    <p class="location">📍 Beachfront Lawn, South Goa • 250 Guests</p>
-                    <p class="story">
-                        A breezy, romantic celebration by the Arabian sea. Featuring barefoot beach mandap vows, 
-                        fresh tropical floral accents, artisanal coconut drink bars, and an all-night seaside bonfire party.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-1" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Plan Similar Event</a>
-                        <a href="#modal-3" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="modal-3" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=80" alt="Rohan & Ananya Reception">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Grand Reception</span>
-                    <h2>Rohan & Ananya</h2>
-                    <p class="location">📍 Taj Lake Palace, Udaipur • 350 Guests</p>
-                    <p class="story">
-                        Floating atop the historic waters of Lake Pichola, this black-tie evening featured mirrored tablescapes, 
-                        champagne pyramids, and private fireworks lighting up the Udaipur skyline.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-2" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Plan Similar Event</a>
-                        <a href="#modal-4" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="modal-4" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80" alt="Lotus Blossom Mandap">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Floral & Decor</span>
-                    <h2>The Lotus Sanctum</h2>
-                    <p class="location">📍 The Oberoi Udaivilas • Signature Design</p>
-                    <p class="story">
-                        Our master artisans sculpted a floating 16-pillar mandap surrounded by fragrant lotus blossoms, 
-                        cascading white orchids, and candlelit stepped pools designed for an unforgettable pheras ceremony.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-3" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Request Decor</a>
-                        <a href="#modal-5" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="modal-5" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80" alt="Dev & Simran Pre-Wedding">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Pre-Wedding Story</span>
-                    <h2>Dev & Simran</h2>
-                    <p class="location">📍 Stepwells & Havelis, Jaipur • Editorial Shoot</p>
-                    <p class="story">
-                        Styled in bespoke royal couture, our production team captured intimate moments against carved stone arches 
-                        and historic courtyards, resulting in an heirloom pre-wedding documentary album.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-4" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Book Shoot</a>
-                        <a href="#modal-6" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-       
-        <div id="modal-6" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80" alt="Ishaan & Tanya Reception">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Luxury Reception</span>
-                    <h2>Ishaan & Tanya</h2>
-                    <p class="location">📍 ITC Grand Bharat, Gurgaon • 500 Guests</p>
-                    <p class="story">
-                        An evening inspired by contemporary ballroom grandeur: towering floral centerpieces, 
-                        curated 7-course culinary gastronomy, and a bespoke illuminated dance arena.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-5" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Plan Similar Event</a>
-                        <a href="#modal-7" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="modal-7" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=1200&q=80" alt="The Starlight Canopy">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Floral & Decor</span>
-                    <h2>The Starlight Canopy</h2>
-                    <p class="location">📍 Rambagh Palace, Jaipur • Signature Installation</p>
-                    <p class="story">
-                        Designed for open-sky starlit banquets, this installation features over 1,200 delicate pendant crystals, 
-                        ethereal drapery, and romantic warm amber illumination.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-6" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Request Decor</a>
-                        <a href="#modal-8" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="modal-8" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=80" alt="Vivaan & Pooja Wedding">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Royal Palace Wedding</span>
-                    <h2>Vivaan & Pooja</h2>
-                    <p class="location">📍 Jai Mahal Palace, Jaipur • 600 Guests</p>
-                    <p class="story">
-                        A magnificent celebration in true Rajputana tradition. Featuring a regal vintage car processional, 
-                        rose petal showers from palace balconies, and 200 musicians playing royal raags.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-7" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Plan Similar Event</a>
-                        <a href="#modal-9" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="modal-9" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1200&q=80" alt="Siddharth & Tara Pre-Wedding">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Pre-Wedding Story</span>
-                    <h2>Siddharth & Tara</h2>
-                    <p class="location">📍 Sam Sand Dunes, Jaisalmer • Sunset Story</p>
-                    <p class="story">
-                        Captured under the warm golden desert glow of Rajasthan. Bohemian rugs, lantern-lit desert pathways, 
-                        and heart-warming portraits creating memories that last a lifetime.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-8" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Book Shoot</a>
-                        <a href="#modal-10" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="modal-10" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1200&q=80" alt="The Velvet Mirage">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Floral & Decor</span>
-                    <h2>The Velvet Mirage</h2>
-                    <p class="location">📍 Fairmont Jaipur • Sangeet Spectacular</p>
-                    <p class="story">
-                        Vibrant jewel tones, rich fuchsia silks, and ornate brass lanterns transformed the courtyard into 
-                        an electrifying celebratory carnival for an unforgettable Sangeet celebration.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-9" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Request Decor</a>
-                        <a href="#modal-11" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="modal-11" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1200&q=80" alt="Arjun & Natasha Reception">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Garden Reception</span>
-                    <h2>Arjun & Natasha</h2>
-                    <p class="location">📍 Taj West End, Bengaluru • 300 Guests</p>
-                    <p class="story">
-                        Lush manicured tropical botanical gardens lit by warm festoon lights, artisanal live cooking stations, 
-                        and heartfelt champagne toasts beneath heritage trees.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-10" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Plan Similar Event</a>
-                        <a href="#modal-12" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="modal-12" class="lightbox-modal">
-            <a href="#gallery" class="lightbox-backdrop"></a>
-            <div class="lightbox-dialog">
-                <a href="#gallery" class="lightbox-close">&times;</a>
-                <div class="lightbox-photo">
-                    <img src="https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&w=1200&q=80" alt="Neil & Kriti Pre-Wedding">
-                </div>
-                <div class="lightbox-details">
-                    <span class="tag">Pre-Wedding Story</span>
-                    <h2>Neil & Kriti</h2>
-                    <p class="location">📍 Lake Pichola Ghats, Udaipur • Sunrise Session</p>
-                    <p class="story">
-                        Gliding silently across lake waters as dawn breaks over marble palaces. Our cinematography team 
-                        captured breathtaking reflections and quiet romantic moments.
-                    </p>
-                    <div class="lightbox-nav">
-                        <a href="#modal-11" class="lightbox-arrow">← Prev</a>
-                        <a href="contact.html" class="primary-btn">Book Shoot</a>
-                        <a href="#modal-1" class="lightbox-arrow">Next →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <section class="cta">
-            <div class="cta-content">
-                <p class="section-label">LET'S CREATE SOMETHING BEAUTIFUL</p>
-                <h2>Your Dream Wedding<br>Starts <span>Here.</span></h2>
-                <p>
-                    Every love story is unique, and your wedding celebration should be nothing less than extraordinary. 
-                    Let our team handle every detail while you cherish every second.
-                </p>
-                <a href="contact.html" class="primary-btn">Let's Talk</a>
-            </div>
-        </section>
-
-    </main>
+      </div>
+    </section>
 
     
-    <footer>
-        <div class="footer-logo">
-            EverAfter
+    <section class="portfolio-cta">
+      <div class="container">
+        <div class="cta-inner">
+          <p class="cta-kicker">PLAN YOUR WEDDING WITH US</p>
+          <h2 class="cta-title">Ready to Create Your Own Unforgettable Celebration?</h2>
+          <p class="cta-desc">
+            Let our passionate team craft a bespoke wedding that reflects your unique story, 
+            traditions, and dreams with effortless perfection.
+          </p>
+          <div class="cta-buttons">
+            <a href="../contact.html" class="btn btn-primary">
+              Start Planning
+              <img src="../assets/c464f.svg" width="12" height="14" alt="Arrow">
+            </a>
+            <a href="../custom-service-builder.html" class="btn btn-outline">
+              Explore Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <div class="modal" id="portfolioModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" aria-label="Close details">&times;</button>
+      
+     
+      <div class="modal-media">
+        <img id="modalImage" src="" alt="Wedding celebration photo">
+        <span class="modal-badge" id="modalCategory">Wedding</span>
+        <button type="button" class="modal-arrow prev" aria-label="Previous moment">‹</button>
+        <button type="button" class="modal-arrow next" aria-label="Next moment">›</button>
+      </div>
+
+      
+      <div class="modal-info">
+        <span class="modal-kicker">FEATURED CELEBRATION</span>
+        <h2 class="modal-title" id="modalTitle">Couple Names</h2>
+        
+        <div class="modal-meta-grid">
+          <div class="modal-meta-item">
+            <span id="modalLocation">📍 Location</span>
+          </div>
+          <div class="modal-meta-item">
+            <span id="modalGuests">👥 Guests</span>
+          </div>
+          <div class="modal-meta-item">
+            <span id="modalTimeline">📅 Timeline</span>
+          </div>
         </div>
 
-        <p>
-            Crafting beautiful beginnings since 2026.
+        <p class="modal-story" id="modalStory">
+          Detailed celebration narrative and production highlights.
         </p>
 
-        <div class="footer-links">
-            <a href="homepage.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+        <div class="modal-highlights" id="modalHighlights">
+         
         </div>
 
-        <p class="copyright">
-            © 2026 EverAfter. All rights reserved.
-        </p>
-    </footer>
-<script src="portfolio.js"></script>
+        <div class="modal-bottom">
+          <a href="../contact.html" class="modal-plan-btn">
+            Plan a Similar Wedding
+            <img src="../assets/c464f.svg" width="12" height="14" alt="">
+          </a>
+          <span class="modal-counter" id="modalCounter">1 / 12</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../assets/b7664.svg" width="34" height="34" alt="Elan Weddings">
+            <span class="footer-brand-name">Elan Weddings</span>
+          </div>
+          <p class="footer-tagline">Crafting timeless love stories, breathtaking celebrations, and unforgettable memories across India and beyond.</p>
+        </div>
+        
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../custom-service-builder.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Connect With Us</h4>
+          <p>📍 The Heritage Atelier, DLF Cyber City, Gurugram</p>
+          <p>📞 +91 98765 43210</p>
+          <p>✉️ hello@elanweddings.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Elan Weddings. All rights reserved.</p>
+        <p class="footer-crafted">Thoughtfully planned. Beautifully executed.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="portfolio.js"></script>
 </body>
-
 </html>
