@@ -1,0 +1,5 @@
+.prose { max-width: 800px; }
+.prose h2 { font-size: 28px; margin-top: 32px; }
+@media (width > 800px) {
+  .prose { padding-top: 20px; }
+}
