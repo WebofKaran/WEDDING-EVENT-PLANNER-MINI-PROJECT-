@@ -1,0 +1,176 @@
+
+.card {
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  border-radius: 16px;
+}
+
+.card h3 {
+  margin: 23px 0 12px;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+
+.invitation {
+  text-align: center;
+  padding: 90px 24px;
+  background: #eddae0;
+}
+
+.invitation h2 {
+  font-family: Svetze, Georgia, serif;
+  font-size: clamp(38px, 4.3vw, 58px);
+}
+
+.invitation p {
+  margin-bottom: 26px;
+}
+
+
+.filters {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  border: 1px solid #c45b734d;
+  border-radius: 30px;
+  padding: 10px 24px;
+  background: transparent;
+}
+
+.filter.active {
+  background: #c45b73;
+  color: white;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 26px;
+}
+
+.gallery-card {
+  padding: 0 0 20px;
+  background: none;
+  border: 0;
+  text-align: left;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 340px;
+  border-radius: 150px 150px 12px 12px;
+  transition: filter .3s;
+}
+
+.gallery-card:hover img {
+  filter: brightness(.88);
+}
+
+.gallery-card:hover img[src^="assets/wedding-"][src$="-hd.webp"] {
+  filter: blur(0.45px) brightness(.88);
+}
+
+.gallery-meta {
+  display: block;
+  margin: 22px 0 10px;
+  color: #a1425a;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.gallery-card h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.text-link {
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.story-dialog {
+  padding: 0;
+  width: min(800px, calc(100% - 32px));
+}
+
+.story-dialog > img {
+  width: 100%;
+  height: 340px;
+}
+
+.story-dialog > div {
+  padding: 35px;
+}
+
+.story-dialog .close {
+  background: white;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 1100px) {
+  .gallery-card img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card img {
+    height: 180px;
+  }
+  .card h3 {
+    font-size: 23px;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .card img {
+    height: 250px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .gallery {
+    gap: 28px 16px;
+  }
+  .gallery-card img {
+    height: 220px;
+  }
+  .gallery-card h2 {
+    font-size: 24px;
+  }
+  .gallery-meta {
+    font-size: 11px;
+    letter-spacing: .3px;
+  }
+  .filters {
+    gap: 8px;
+  }
+  .filter {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+  .story-dialog > img {
+    height: 240px;
+  }
+  .invitation {
+    padding: 65px 20px;
+  }
+}
