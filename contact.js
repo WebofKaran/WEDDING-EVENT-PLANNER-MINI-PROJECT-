@@ -1,13 +1,13 @@
 "use strict";
 
+// Get selected package
 const query = new URLSearchParams(location.search).get("package");
 
-if (query !== null) {
-    selected = [...new Set(query.split(","))].filter((id) =>
-        catalog.some((i) => i.id === id)
-    );
+if (query) {
+    selected = query.split(",");
 }
 
+// Show package
 if (selected.length) {
     const panel = $("#contact-package");
 
@@ -15,81 +15,89 @@ if (selected.length) {
     title.textContent = "My Package";
 
     const text = document.createElement("p");
-    text.textContent = items().length + " selections · " + money(total());
+    text.textContent = selected.length + " selections";
 
     const edit = document.createElement("a");
-    Object.assign(edit, {
-        href: "custom-service-builder.html",
-        textContent: "Edit your package"
-    });
+    edit.href = "custom-service-builder.html";
+    edit.textContent = "Edit your package";
 
     panel.append(title, text, edit);
-    storage.set("elan-package", selected);
 }
 
-const date = $("input[type=date]");
-const now = new Date();
+// Set minimum wedding date to today
+const date = $('input[name="date"]');
+const today = new Date();
 
 date.min =
-    now.getFullYear() +
-    "-" +
-    String(now.getMonth() + 1).padStart(2, "0") +
-    "-" +
-    String(now.getDate()).padStart(2, "0");
+    today.getFullYear() + "-" +
+    String(today.getMonth() + 1).padStart(2, "0") + "-" +
+    String(today.getDate()).padStart(2, "0");
 
+// Autofill saved details
 const profile = storage.get("elan-profile", null);
 
-if (profile?.name) {
-    $("input[name=name]", $("#contact-form")).value = profile.name;
+if (profile) {
+    $('input[name="name"]').value = profile.name || "";
+    $('input[name="email"]').value = profile.email || "";
 }
 
-if (profile?.email) {
-    $("input[name=email]", $("#contact-form")).value = profile.email;
-}
-
-let enquiry = "";
-
+// Handle form submission
 $("#contact-form").addEventListener("submit", (e) => {
     e.preventDefault();
 
     const data = new FormData(e.target);
 
-    if (
-        !String(data.get("name")).trim() ||
-        !String(data.get("message")).trim()
-    ) {
-        toast("Please enter your name and wedding vision.");
+    const name = data.get("name").trim();
+    const phone = data.get("phone").trim();
+    const weddingDate = data.get("date");
+    const message = data.get("message").trim();
+
+    // Validate name
+    if (!/^[A-Za-z ]+$/.test(name)) {
+        toast("Please enter a valid name.");
         return;
     }
 
-    enquiry =
-        "Hello Elan Weddings,\n\n" +
-        ["name", "email", "phone", "date", "city", "guests", "message"].map(
-            (key) =>
-                key.toUpperCase() + ": " + (data.get(key) || "Not decided")
-        ).join("\n") +
-        "\n\n" +
-        (selected.length
-            ? estimate()
-            : "I would like help creating my wedding package.");
+    // Validate phone
+    if (!/^[0-9]{10}$/.test(phone)) {
+        toast("Please enter a valid 10 digit phone number.");
+        return;
+    }
 
+    // Validate wedding date
+    if (!weddingDate || weddingDate < date.min) {
+        toast("Please select a valid wedding date.");
+        return;
+    }
+
+    // Validate message
+    if (!message) {
+        toast("Please enter your wedding vision.");
+        return;
+    }
+
+    // Create enquiry
+    const enquiry = `
+Name: ${name}
+Email: ${data.get("email")}
+Phone: ${phone}
+Date: ${weddingDate}
+City: ${data.get("city")}
+Guests: ${data.get("guests")}
+Message: ${message}
+`;
+
+    // Prepare email
     $("#send-email").href =
-        "mailto:everafter@gmail.com?subject=" +
-        encodeURIComponent("Wedding enquiry — " + data.get("name")) +
-        "&body=" +
+        "mailto:everafter@gmail.com?subject=Wedding Enquiry&body=" +
         encodeURIComponent(enquiry);
 
     $("#enquiry-result").hidden = false;
 
-    $("#enquiry-result").scrollIntoView({
-        behavior: "smooth",
-        block: "nearest"
-    });
+    toast("Your enquiry is ready!");
 });
 
+// Hide result when form changes
 $("#contact-form").oninput = () => {
     $("#enquiry-result").hidden = true;
 };
-
-$("#download-enquiry").onclick = () =>
-    download("Elan-Wedding-Enquiry.txt", enquiry);
